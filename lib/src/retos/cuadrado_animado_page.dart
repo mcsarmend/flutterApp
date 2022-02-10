@@ -1,4 +1,3 @@
-import 'dart:math';
 
 import 'package:flutter/material.dart';
 class CuadradoAnimadoPage extends StatelessWidget {
@@ -41,16 +40,16 @@ class _CuadradoAnimadoState extends State<_CuadradoAnimado> with SingleTickerPro
 
     //Mover a la derecha
         moverDerecha = Tween(begin:0.1 ,end: 125.0).animate(
-      CurvedAnimation(parent: controller, curve: Interval(0.0,0.25, curve: Curves.bounceOut))
+      CurvedAnimation(parent: controller, curve: const Interval(0.0,0.25, curve: Curves.bounceOut))
       );
         moverArriba = Tween(begin:0.1 ,end  : -125.0).animate(
-      CurvedAnimation(parent: controller, curve: Interval(0.25,0.50, curve: Curves.bounceOut))
+      CurvedAnimation(parent: controller, curve: const Interval(0.25,0.50, curve: Curves.bounceOut))
       );
         moverIzquierda = Tween(begin:0.1 ,end: -125.0).animate(
-      CurvedAnimation(parent: controller, curve: Interval(0.50,0.75, curve: Curves.bounceOut))
+      CurvedAnimation(parent: controller, curve: const Interval(0.50,0.75, curve: Curves.bounceOut))
       );
         moverAbajo = Tween(begin:0.1 ,end  : 125.0).animate(
-      CurvedAnimation(parent: controller, curve: Interval(0.75,1.00, curve: Curves.bounceOut))
+      CurvedAnimation(parent: controller, curve: const Interval(0.75,1.00, curve: Curves.bounceOut))
       );
 
       controller.addListener(() {
