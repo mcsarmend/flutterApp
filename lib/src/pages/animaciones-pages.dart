@@ -1,5 +1,7 @@
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
-import 'dart:math';
+import 'dart:math' show pi;
 
 class AnimacionesPage extends StatelessWidget {
   const AnimacionesPage({Key? key}) : super(key: key);
